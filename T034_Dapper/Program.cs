@@ -1,12 +1,8 @@
-﻿using Dapper;
-using Microsoft.Data.SqlClient;
-using System.Data;
-using System.Globalization;
+﻿using System.Globalization;
+using T034_Dapper.Data;
 using T034_Dapper.Models;
 
-string connectionString = "Server=(localdb)\\MSSQLLocalDB;Database=DotNetCourseDatabase;TrustServerCertificate=true;Trusted_Connection=true;";
-
-IDbConnection dbConnection = new SqlConnection(connectionString);
+DataContextDapper dapper = new();
 
 ComputerModel myComputer = new()
 {
@@ -18,9 +14,6 @@ ComputerModel myComputer = new()
 	ReleaseDate = DateTime.Now,
 	Price = 948.87m
 };
-
-//myComputer.ReleaseDate.ToString("yyyy-MM-dd")
-//myComputer.Price.ToString("0.00", CultureInfo.InvariantCulture)
 
 string sqlInsert = @$"INSERT INTO TutorialAppSchema.Computer (
 	Motherboard,
@@ -39,7 +32,7 @@ string sqlInsert = @$"INSERT INTO TutorialAppSchema.Computer (
 	'{myComputer.ReleaseDate:yyyy-MM-dd}',
 	'{myComputer.Price.ToString("0.00", CultureInfo.InvariantCulture)}')";
 
-//dbConnection.Execute(sqlInsert);
+//dapper.ExecuteSql(sqlInsert);
 
 string sqlSelect = @"SELECT 
 	Computer.Motherboard,
@@ -51,7 +44,7 @@ string sqlSelect = @"SELECT
 	Computer.Price
 FROM TutorialAppSchema.Computer";
 
-IEnumerable<ComputerModel> computers = dbConnection.Query<ComputerModel>(sqlSelect);
+IEnumerable<ComputerModel> computers = dapper.LoadData<ComputerModel>(sqlSelect);
 
 int recordNo = 1;
 foreach (var computer in computers)
@@ -67,5 +60,3 @@ foreach (var computer in computers)
 
 	Console.WriteLine(row);
 }
-
-
