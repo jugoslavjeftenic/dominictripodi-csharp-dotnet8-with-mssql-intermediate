@@ -9,6 +9,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "T028_Namespaces", "T028_Nam
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "T032_DatabaseConnections", "T032_DatabaseConnections\T032_DatabaseConnections.csproj", "{1F9D9D5E-EFE6-4112-9F06-C3AB7F5B574C}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "T034_Dapper", "T034_Dapper\T034_Dapper.csproj", "{A71E467D-7AA2-4EB3-9D31-88B4C28584E3}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +29,10 @@ Global
 		{1F9D9D5E-EFE6-4112-9F06-C3AB7F5B574C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{1F9D9D5E-EFE6-4112-9F06-C3AB7F5B574C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{1F9D9D5E-EFE6-4112-9F06-C3AB7F5B574C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A71E467D-7AA2-4EB3-9D31-88B4C28584E3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A71E467D-7AA2-4EB3-9D31-88B4C28584E3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A71E467D-7AA2-4EB3-9D31-88B4C28584E3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A71E467D-7AA2-4EB3-9D31-88B4C28584E3}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
