@@ -17,6 +17,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "T037_Config", "T037_Config\
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "T039_FileReadAndWrite", "T039_FileReadAndWrite\T039_FileReadAndWrite.csproj", "{79AAEC0C-B7BA-40FB-98EA-098DE8038D04}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "T040_JsonSerialization", "T040_JsonSerialization\T040_JsonSerialization.csproj", "{BCEDC709-C16D-43B9-84C7-EAFC069AE3EE}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -51,6 +53,10 @@ Global
 		{79AAEC0C-B7BA-40FB-98EA-098DE8038D04}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{79AAEC0C-B7BA-40FB-98EA-098DE8038D04}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{79AAEC0C-B7BA-40FB-98EA-098DE8038D04}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BCEDC709-C16D-43B9-84C7-EAFC069AE3EE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BCEDC709-C16D-43B9-84C7-EAFC069AE3EE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BCEDC709-C16D-43B9-84C7-EAFC069AE3EE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BCEDC709-C16D-43B9-84C7-EAFC069AE3EE}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
